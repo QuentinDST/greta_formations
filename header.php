@@ -8,13 +8,13 @@
     <?php wp_head();?>
 </head>
 
-<body <?php body_class();?>>
+<body <?php body_class(); ?>>
     <header class= "header-bcg">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
 
-                <a class="navbar-brand" href="#">
-                    <img src="https://localhost/wordpress-6.1.1-fr_FR/wordpress/wp-content/uploads/2023/01/LOGO.jpg" alt="" width =180px height=80px>
+                <a class="navbar-brand" href="<?php echo home_url( '/' ); ?>">
+                <img class="logo-greta" src="<?php echo get_template_directory_uri(); ?>/images/logo-greta-gard-lozere.jpg" alt="Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>

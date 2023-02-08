@@ -1,0 +1,31 @@
+<?php
+
+function greta_create_formation_tags() {
+
+    $labels = array(
+        'name' => 'Étiquettes de formation',
+        'singular_name' => 'Étiquette de formation',
+        'menu_name' => 'Étiquettes de formation',
+    );
+    
+    $args = array(
+        'labels' => $labels,
+        'public' => true,
+        'show_in_rest' => true,
+        'hierarchical' => false,
+    );
+    
+    register_taxonomy( 'formation_tag', 'formation', $args );
+}
+
+add_action( 'init', 'greta_create_formation_tags' );
+
+// Création des étiquettes ville, département, module et titre professionnel
+function greta_create_formation_tag_terms() {
+wp_insert_term( 'Ville', 'formation_tag' );
+wp_insert_term( 'Département', 'formation_tag' );
+wp_insert_term( 'Module', 'formation_tag' );
+wp_insert_term( 'Titre professionnel', 'formation_tag' );
+}
+add_action( 'init', 'greta_create_formation_tag_terms' );
+

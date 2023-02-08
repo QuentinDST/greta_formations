@@ -1,9 +1,10 @@
 <?php get_header(); ?>
 
-<h1>Page</h1>
+<h1>Retrouvez ici nos dernières actualités</h1>
+<h2>je suis sur mon template</h2>
 
 <?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
-    <h1><?= the_title(); ?>	</h1>
+
     <?= the_category(); ?>	
     <?= the_content(); ?>	
 

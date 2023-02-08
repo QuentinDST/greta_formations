@@ -33,7 +33,7 @@ function greta_my_style() {
     wp_enqueue_style( 'mon-style', get_stylesheet_uri());
 
 }
-add_action('wp_enqueue_scripts', 'greta_my_style',11);
+add_action('wp_enqueue_scripts', 'greta_my_style');
 
 function greta_js_like() {// script js détecté au addEventListener
 

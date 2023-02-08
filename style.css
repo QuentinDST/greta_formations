@@ -13,14 +13,98 @@ Text Domain: greta
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 */
 
+/* Onglets fiche métiers */
+
+.title-formation{
+    margin-bottom: 50px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
 .custom-link{
     text-decoration: none;
 }
 
 footer{
-    background-color: darkcyan;
+    background-color: rgb(189, 190, 190);
 }
 
 table, th, td {  
     border: 1px solid black;  
 }  
+
+.tabs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+  
+  .tabs .tabs--ul {
+    display: flex;
+    list-style: none;
+    margin-right: 10px;
+    padding: 0;
+    margin-bottom: 50px;
+  
+  }
+  
+  .tabs .tabs--li {
+    flex: 1;
+    text-align: center;
+    box-shadow: 2px 1px 3px #eab676;
+    cursor: pointer;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+
+  .tabs .tabs--li:hover{
+    box-shadow: 3px 3px 3px #e39434;
+  }
+  
+  .tabs a {
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .tabs [id]{
+    display: none;
+  }
+  
+  .tabs [id]:target{
+    display: block;
+  }
+  
+
+/* Accueil */
+
+
+.location{
+	width: auto;
+	height:600px;
+	background-image: url("img/dev1.jpg");
+	background-size: contain;
+	position: relative;
+	margin-bottom: 100px;
+}
+
+.items{
+	position: absolute;
+	bottom: 40px;
+	right: 50%;
+	transform: translate(+50%, -50%);
+	color: white;
+}
+
+.items a{
+	margin-right: 30px;
+	color: white;
+	font-size: 30px;
+	text-decoration: overline;
+}
+
+.items a:hover{
+	letter-spacing: 5px;
+}
